@@ -258,7 +258,7 @@ export default class {
       }
     }
 
-    // make it the next person's turn to play (TODO: make it skip players who won)
+    // make it the next person's turn to play
     let userIndex = this.users.map(user => user.name).indexOf(name);
     do {
       userIndex = userIndex === this.users.length - 1 ? 0 : userIndex + 1;
